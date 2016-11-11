@@ -76,8 +76,8 @@ public class SecondScreen extends Activity {
     }
 
     // switch from current activity to final activity, which shows the completed story
-    public void SwitchStoryScreen(View view) {
-        Intent third_layout_intent = new Intent(this, StoryScreen.class);
+    public void SwitchStoryActivity(View view) {
+        Intent third_layout_intent = new Intent(this, StoryActivity.class);
         startActivity(third_layout_intent);
     }
 
@@ -105,9 +105,9 @@ public class SecondScreen extends Activity {
 
             if (myStory.getPlaceholderRemainingCount() == 0){
                 // create intend to pass entered data to final activity
-                Intent storyScreenIntent = new Intent(this, StoryScreen.class);
-                storyScreenIntent.putExtra("completeStory", myStory.toString());
-                startActivity(storyScreenIntent);
+                Intent storyActivityIntent = new Intent(this, StoryActivity.class);
+                storyActivityIntent.putExtra("completeStory", myStory.toString());
+                startActivity(storyActivityIntent);
                 finish();
             }
         }

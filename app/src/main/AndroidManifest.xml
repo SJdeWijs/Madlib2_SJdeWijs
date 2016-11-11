@@ -20,7 +20,7 @@
             android:label="Get words"
             android:theme="@style/AppTheme"/>
 
-        <activity android:name=".StoryScreen"
+        <activity android:name=".StoryActivity"
             android:label="Show story"
             android:theme="@style/AppTheme"/>
 
