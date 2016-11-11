@@ -12,38 +12,42 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="nas.madlib_sjdewijs.MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:orientation="vertical"
-        android:gravity="center|top"
-        android:id="@+id/homepage">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/madlibs"
-            android:id="@+id/imageView"
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:gravity="center|top"
+            android:id="@+id/homepage">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Welcome to Mad Libs! As soon as you get started, type in a couple of words. These words will complete a story which you will get to see as soon as you are finished with filling in the words. Click the button to start!"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/madlibs"
+                android:id="@+id/imageView"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
 
-        <Button
-            android:text="Start Playing!"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="53dp"
-            android:id="@+id/start_button"
-            android:onClick="SwitchSecondLayout"
-            android:textColor="#000000" />
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Mad Libs! As soon as you get started, type in a couple of words. These words will complete a story which you will get to see as soon as you are finished with filling in the words. Click the button to start!"/>
+
+            <Button
+                android:text="Start Playing!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="53dp"
+                android:id="@+id/start_button"
+                android:onClick="SwitchSecondLayout"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

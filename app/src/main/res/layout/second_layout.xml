@@ -14,23 +14,37 @@
         android:textColor="#000000"
         android:textAlignment="viewStart" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="%s words left."
+        android:id="@+id/tv_words_left" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
 
-
         <EditText
             android:layout_width="220dp"
             android:layout_height="wrap_content"
-            android:id="@+id/entered_words"
-            android:text="@string/enter_word_edit_text" />
+            android:id="@+id/et_entered_words"
+            android:hint="getNextPlaceholder" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ok"
-            android:onClick="onGetWordClick"/>
+            android:onClick="enteredWord"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
 
     </LinearLayout>
 
